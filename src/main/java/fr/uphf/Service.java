@@ -5,7 +5,6 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
 public class Service {
     private Integer id;
     private Integer capacite;
@@ -21,4 +20,12 @@ public class Service {
             chemin.put(jsonEtape.getString("point"), jsonEtape.getInt("date"));
         }
     }
-}
+
+    public Integer getId() {
+        return id;
+    } 
+    public Integer getCapacite() {
+        return capacite;
+    }
+} 
+
