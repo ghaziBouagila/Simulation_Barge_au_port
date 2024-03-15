@@ -18,7 +18,7 @@ public class RET {
     }
 
     // Méthode pour afficher le réseau espace-temps
-    public void afficherReseau() {
+    public void afficherReseaux() {
         for (int temps = 0; temps < dureeEnDemiJournees; temps++) {
             for (int terminal = 0; terminal < nombreTerminals; terminal++) {
                 if (matrice[temps][terminal] != null) {

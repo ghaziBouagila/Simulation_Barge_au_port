@@ -44,5 +44,8 @@ public class Service {
         else {
             return null;
         }
-    }
+    } 
+    public Integer getId() {
+        return id;
+    } 
 }

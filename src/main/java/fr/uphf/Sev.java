@@ -44,5 +44,19 @@ public class Sev {
             demandes.add(demande);
         }
         System.out.println("Chargement des services et des demandes terminé");
+    } 
+    public void AssignerService() {
+        // Pour chaque demande
+        for (Demande demande : demandes) {
+            // Trouver un service qui peut répondre à la demande
+            Service service = Service.unServiceRepondALaDemande(services, demande);
+            if (service != null) {
+                // Si un service a été trouvé, afficher l'information
+                System.out.println("La demande " + demande.getId() + " est satisfaite par le service " + service.getId());
+            } else {
+                // Si aucun service n'a été trouvé, afficher un message d'erreur
+                System.out.println("Aucun service ne peut satisfaire la demande " + demande.getId());
+            }
+        }
     }
 }
