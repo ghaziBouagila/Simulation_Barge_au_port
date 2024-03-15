@@ -38,5 +38,8 @@ public class Demande {
 
     public Integer getNbConteneurs() {
         return nbConteneurs;
+    } 
+    public Integer getId() {
+        return id;
     }
 }
